@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20224.23.0209.1653                               -->
+<workbook original-version='18.1' source-build='2022.4.1 (20224.23.0209.1653)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='internetsatisfactionbyregion' inline='true' name='federated.1afp1t104lkf2l1ayixf40ybsq7l' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='internetsatisfactionbyregion' name='textscan.1uxfphr156sg341c5136o1gq686t'>
+            <connection class='textscan' directory='D:/TABLEAU' filename='internetsatisfactionbyregion.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Belgrade]' />
+            <value name='[Central Serbia]' />
+            <value name='[Vojvodina]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[internetsatisfactionbyregion.csv].[Belgrade]' />
+              <field name='[internetsatisfactionbyregion.csv].[Central Serbia]' />
+              <field name='[internetsatisfactionbyregion.csv].[Vojvodina]' />
+            </group>
+          </groups>
+          <relation connection='textscan.1uxfphr156sg341c5136o1gq686t' name='internetsatisfactionbyregion.csv' table='[internetsatisfactionbyregion#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='Belgrade' ordinal='0' />
+              <column datatype='integer' name='Central Serbia' ordinal='1' />
+              <column datatype='integer' name='Vojvodina' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='integer' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[Belgrade]' />
+            <value name='[Central Serbia]' />
+            <value name='[Vojvodina]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[internetsatisfactionbyregion.csv].[Belgrade]' />
+              <field name='[internetsatisfactionbyregion.csv].[Central Serbia]' />
+              <field name='[internetsatisfactionbyregion.csv].[Vojvodina]' />
+            </group>
+          </groups>
+          <relation connection='textscan.1uxfphr156sg341c5136o1gq686t' name='internetsatisfactionbyregion.csv' table='[internetsatisfactionbyregion#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+              <column datatype='integer' name='Belgrade' ordinal='0' />
+              <column datatype='integer' name='Central Serbia' ordinal='1' />
+              <column datatype='integer' name='Vojvodina' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[internetsatisfactionbyregion.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[internetsatisfactionbyregion.csv_64D9F7AEB8DB43649D725008DEAFA649]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[internetsatisfactionbyregion.csv_64D9F7AEB8DB43649D725008DEAFA649]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Region' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Satisfaction with Internet' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='internetsatisfactionbyregion.csv' datatype='table' name='[__tableau_internal_object_id__].[internetsatisfactionbyregion.csv_64D9F7AEB8DB43649D725008DEAFA649]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='internetsatisfactionbyregion.csv' id='internetsatisfactionbyregion.csv_64D9F7AEB8DB43649D725008DEAFA649'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='integer' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[Belgrade]' />
+                  <value name='[Central Serbia]' />
+                  <value name='[Vojvodina]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[internetsatisfactionbyregion.csv].[Belgrade]' />
+                    <field name='[internetsatisfactionbyregion.csv].[Central Serbia]' />
+                    <field name='[internetsatisfactionbyregion.csv].[Vojvodina]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.1uxfphr156sg341c5136o1gq686t' name='internetsatisfactionbyregion.csv' table='[internetsatisfactionbyregion#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                    <column datatype='integer' name='Belgrade' ordinal='0' />
+                    <column datatype='integer' name='Central Serbia' ordinal='1' />
+                    <column datatype='integer' name='Vojvodina' ordinal='2' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='internetsatisfactionbyregion' name='federated.1afp1t104lkf2l1ayixf40ybsq7l' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1afp1t104lkf2l1ayixf40ybsq7l'>
+            <column caption='Region' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+            <column caption='Satisfaction with Internet' datatype='integer' name='[Pivot Field Values]' role='measure' type='quantitative' />
+            <column-instance column='[Pivot Field Values]' derivation='Avg' name='[avg:Pivot Field Values:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pivot Field Names]' derivation='None' name='[none:Pivot Field Names:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1afp1t104lkf2l1ayixf40ybsq7l].[none:Pivot Field Names:nk]' value='124' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1afp1t104lkf2l1ayixf40ybsq7l].[avg:Pivot Field Values:qk]</rows>
+        <cols>[federated.1afp1t104lkf2l1ayixf40ybsq7l].[none:Pivot Field Names:nk]</cols>
+      </table>
+      <simple-id uuid='{CD08A3C5-10EF-4BF2-B831-E8AD0BF5F128}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1afp1t104lkf2l1ayixf40ybsq7l].[none:Pivot Field Names:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2F055F52-1AF8-4E1D-8CBD-CD6C0C2EF07E}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAQ8klEQVR4nO3daXAUd3rH8W/PjGYGSaNb6ESgEyQuCWQugcVhzGGzG+/aMWW7vN5NOcna
+      W3mxSSWVV6kkb5JUJXHlRY6q9bGO7ayXXa+9PorDy2UwQpzCCIRAgEDH6B6NNCPN2XkhGYNB
+      VgPTo5H6+VSpCo16Zp4W+s1/err//0dRVVVFCANSFEUxTXURQkwlCYAwNAmAMDQJgDA0y1QX
+      IO6t8eQhOgYCpOUVU1U+D5OiTLhtW/MFbLlFZCbao1jhzCAjQIza97s9FCxdTOsXuzjc3I8a
+      DuP3+wmGQoBKOBTE7/cTCoXpd7bjHg2gqt9so6oqwWCAYMBPIBia6t2JWTICxCiT2Up6ZiZz
+      spJodw9Tt/tzml0qAz1uXvjJM3zyzi+xps8jmDyfnM5m7PlL6fzytzS54vAMDPP0C8/wi3/5
+      B1Zs3MThusv8/d/9HOtU71QMkhEgRvk8nbz12j+z+3o8G8pTOHDoGCFUrOFBWi5fxDNrATuf
+      +T6jt+4xyoEzTl568XnWFqqcaOpjVkouG7bsIE114ZvCfYllEoAYZUvI4dkXn8PmuYFzMEha
+      agrL123nRy89R06yA4+7h9ER9233sDLb7qdtwMP1djfZsxOnrPbpRJEzwbHp9JGjlK9dg9pz
+      nWMtHlaWpbD/wFHMqXPZuHY5V04forkXvI4iHk0fxJw/nwzFzb7PD5NeupwVFXM4feosy1au
+      4MzRIyytWStvgb5FURRFAjANBbyDHPh8N72DI2z+4YtkxstA/iCmPADBYBCLRY7DxdSY8muB
+      ZPARU03GTmFoEgBhaBIAYWgSAGFoEgBhaBIAYWgSAGFoEgBhaBIAYWgSAGFoEQ6AyqhnkEHP
+      nVefjw4P4uzqIRCSSx9EbInolWhqyM/x/fsI5lSwqboCgKC3j2P150lLsXO108XqylImnt0q
+      pqNWp4tul2eqy5hQgt1KxbzMe/4sogFovXCWjPlLGfIGbt3W73SSU7qQ+fnJnPjiJD5KMfLU
+      7c/qLhMOx+ZIaDYpbFtVet/3213fwmd1l3WoKDJK8tL411cfv+fPIhaA0YFWrgyYqZgTpHNo
+      GF8whM1iJqQq2CwWFBRsZhNhxi6DVlWV0Pjk7Xv56Mgl+tzeSJUXcRVzM1m1MP++7/f6p2cI
+      hsI6VPTwrBYTm5bNve/7hcOxPeleVVX8fv89fxaxAIQUO5kOM23tnfT1jOD1jQXAkWjnurOX
+      vGSVgbAJG2C+bQ5AXFzcPR/v2IUOWjoGIlVexJnMFh6tKprqMiJMwWq9/3ljJpNZh1oiR1Em
+      3q+IBSAhJYulVVkEPC7S+7ykJig0N1+lrKSAzO6zHKnvoHxJNbH9qxJGE/HpWHEJKRQnpABQ
+      Vjb2ClmyuJqSSD+REBEg5wGEoUkAhKFJAIShSQCEoUkAhKFJAIShSQCEoUkAhKFJAIShSQCE
+      oUkAhKFJAIShSQCEoUkAhKFJAIShSQCEoUkAhKFJAIShSQCEoUkAhKFJAIShSQCEoUkAhKFJ
+      AIShSQCEoUkAhKFJAIShRW5tUDXMYH8vbq+f5PRMHPG28UYYIXqdXYwEQljjk8lKT4rYUwrx
+      sCI3AoS83GjrwuNxc6KuDq9/fA183wAnGy7jHRnBFwh892MIEWWRGwEsiSxashCPq5vungFM
+      prHX/1G3G5e7D2eXjcX5hagAtzXFmKhBxnQwnWufyEzcJ5h4vyK6PHrvjWYarrSTmJqNebwR
+      mD2ziJ3PFOH39LL/4FE2bl+PabwzzHd1iIn1/4hwOExgxo1o6gPt03ToEDPRfkWuQ4xvhLj0
+      AjbNKaX+6CEGvaVkOqyMDrvwBONInmXFajGhAhYNHWIUJbZb6ZlMpgfqphLbpEPMQzxJiGuN
+      DfR7fGTkFZM23iGmsCCDm41nafAGKa6sxBapJxQiAiIWAJM1kaqVNXfc9nWHmMpv3S5ErJDz
+      AMLQJADC0CQAwtAkAMLQJADC0CQAwtAkAMLQJADC0CQAwtAkAMLQJADC0CQAwtAkAMLQJADC
+      0CQAwtAkAMLQJADC0CQAwtAkAMLQJADC0CQAwtAkAMLQJADC0CQAwtAkAMLQJADC0CQAwtAi
+      FwA1jKvXyfXWGwx6Rrl9cXOvu48bbZ34Q7G95Lkwnoh2iGnv7CPg83Lq+PFbHWKCnh6On7qA
+      Z6CD+oZmJAIilkQuAJZEyisWkJWWhMUah3m8Q0yfs5vc0goWLFqCbXgAH2MNC75ugPH1v7/9
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
